@@ -1,0 +1,279 @@
+/*
+ * CSS do site "Loch Multimarcas"
+ */
+
+/* Configuração da página  */
+body {
+
+    .container {
+        width: 100%; /* ou uma largura específica em pixels */
+        margin: 0 auto; /* Isso centraliza o container */
+      }
+
+    /** Muda a cor do fundo da página **/
+    background-color: #ffffff;
+
+    /** Fonte **/
+    font-family: Poppins, Helvetica, sans-serif; 
+
+    /** Margem zerada **/
+    margin: 0%;
+  
+    
+}
+
+
+
+/*************************************** TOPO DO SITE ***************************************/
+
+
+
+
+/** Pega a DIV principal do topo da página, com logo, tiutlo e menu **/
+#header {
+
+    /** Preenche toda a lagura da página **/
+    width: 100%;
+
+    /** Posiciona o elemento em relação ao corpo da página **/
+    height: 200px;
+
+    /** Margem interna **/
+    padding-top: 10px;
+
+    background: #1a1921;
+	
+}
+
+/** Pega a parte de cima da DIV principal, com loco e título da página **/
+#logo {
+    /** largura capaz de armazenar logo e título **/
+    width: 500px;
+
+    /** Altura capaz de armazenar logo e título **/    
+    height: 100px;
+
+    /** Posicionamento relativo para não encavalar com as outras DIVs **/
+    position: left;
+
+}
+
+/** Logo do Site **/
+#logoImg {
+
+    /** Tamanho **/
+    width: 200px;
+    height: 200px;
+
+
+    /** Posição do logo **/
+    float: left;
+	margin-right: 50px;
+}
+
+#tituloLogo {
+    
+    /** Posição **/
+    float: left;
+
+    /** Cor do texto **/
+    color: rgb(0, 0, 0);
+
+    /** Posicionamento - tamanho da linha **/
+    line-height: 100px;
+
+    /** Sem margem**/
+    margin: 0;
+
+    /** Tamanho da fonte **/
+    font-size: 46px;
+}
+
+/** Pega a DIV do menu principal id = "menu" **/
+#menu {
+
+    /** Tamanho **/
+    width: 100%;
+	height: 50px;
+
+    /** Cor do fundo **/
+    background-color: #1a1921;
+}
+
+/** Pega a lista ordenada que compõe o menu **/
+.listaMenu {
+    
+    /** Largura **/
+    width: 100%;
+
+    /** Posicao  **/
+    position: relative;
+    left: 45%;
+    margin-top: -15px;
+}
+
+/** Pega os elementos li do menu com a classe "listaMenu" **/
+.listaMenu li {
+
+    /** Mantém os elementos em uma linha **/
+    display: inline-block;
+}
+
+/** Pega os elementos li a com a classe "listaMenu" **/
+.listaMenu li a {
+
+    /** Remove o sublinhado de links **/
+    text-decoration: none;
+
+    /** Configura o tamanho de 50px para os itens de link da lista **/
+    height: 50px;
+
+    /** Posicionamento**/
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+/** Pega os elementos li a quando estão normal e depois de clicados **/
+.listaMenu li a:link,
+.listaMenu li a:visited {
+
+    /** Muda a cor do texto dos links para branco **/
+    color: white;
+}
+
+/** Pega os elementos li a quando o mouse passa em cima **/
+.listaMenu li a:hover {
+
+    /** Muda a cor do link **/
+    color: hsl(236, 71%, 42%);
+}
+
+/** Pega o link com id "menuAtual" **/
+#menuAtual:link,
+#menuAtual:visited {
+
+    /** Muda estilo para letra maiúscula **/
+    text-transform: uppercase;
+
+    /** Deixa a fonte em negrito **/
+    font-weight: bold;
+}
+
+
+
+/*********************************** CONTEÚDO PRINCIPAL ******************************************/
+
+
+#content {
+
+    /** Largura  **/
+    width: 100%;
+    
+    /** Cor de fundo da div principal **/
+    background-color: #ffffff;
+
+    /** Posicionando os elementos **/
+    position: center;
+
+}
+
+#tituloConteudo {
+    /** Define a cor **/
+    color: rgb(35, 35, 35);
+        
+    /** Alinha ao centro **/
+    text-align: center;
+    
+    /** Reduz a margem inferior **/
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/** Pega tabela dentro da div com id "areaProdutos" **/
+#areaProdutos table {
+    /** Espaço entre as células **/    
+    border-spacing: 50px;
+    border-collapse: separate;
+
+    /** Alinha ao centro **/
+    text-align: center;
+}
+
+/** Pega td da div com id "areaProdutos" **/
+#areaProdutos td {    
+
+    /** Largura das células **/
+    width: 500px;
+    
+    /** Cor do texto   **/
+    color: rgb(35, 35, 35);
+
+    /** Tamanho de fonte   **/
+    font-size: 25px;
+}
+
+/** Pega as imagens da area de produtos **/
+#areaProdutos td img {
+
+    /** Configura um tamanho padrão para as imagens dos produtos **/
+    width: 300px;
+    height: 300px;
+
+    /** Separa a imagem do título acima desta **/
+    margin-top: 10px;
+
+    /** Arredonda as fotos **/
+    border-radius: 10%;
+    
+    /** Borda da foto  **/
+    border: 3px solid rgb(0, 0, 0);
+}
+
+/** Seleciona elementos anotados com a classe "tituloProduto" **/
+.tituloProduto {
+    
+    /** Faz com que a fonte do elemento fique em negrito **/
+    font-weight: bold;
+    
+    /** Remove a margem padrão dos elementos P **/
+    margin: 0;
+}
+
+/** Seleciona elementos anotados com a classe "precoProduto" **/
+.precoProduto {
+
+    /** Remove a margem padrão dos elementos P **/
+    margin: 0;
+}
+
+/** Pega os elementos h4 com id "tel" **/
+#tel h4 {
+
+    /** Remove as margens padrão do H4 **/
+    margin: 0;
+
+    /** Define um tamanho de fonte para o H4 em 28px **/
+    font-size: 28px;
+}
+
+/** Pega os elementos h5 com id "tel" **/
+#tel h5 {
+
+    /** Remove as margens padrão do H5 **/
+    margin: 0;
+
+    /** Adiciona uma pequena margem na parte superior do h5 **/
+    margin-top: 10px;
+}
+
+/** Pega o elemento a com id "tel" **/
+#tel a {
+
+    /** Define a cor do link como branco **/
+    color: white;
+
+    /** Remove o underline do link **/
+    text-decoration: none;
+}
+
+/****************************************** RODAPÉ ************************************/
